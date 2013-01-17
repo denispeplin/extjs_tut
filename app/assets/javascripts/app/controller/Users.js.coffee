@@ -1,5 +1,8 @@
 Ext.define "AM.controller.Users",
   extend: "Ext.app.Controller"
+  stores: [
+    'Users'
+  ]
   views: [
     'user.List',
     'user.Edit'
