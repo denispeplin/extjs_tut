@@ -3,8 +3,9 @@ Ext.define "AM.store.Users",
   model: 'AM.model.User'
   autoLoad: true
   proxy:
-    type: "ajax"
-    url: "users.json"
+    type: "rest"
+    url: "users"
+
     reader:
       type: "json"
       root: "users"
