@@ -3,13 +3,13 @@
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 Ext.application
   requires: ['Ext.container.Viewport']
-  name: "HelloExt"
+  name: "AM"
   appFolder: "/assets/app"
   launch: ->
     Ext.create "Ext.container.Viewport",
       layout: "fit"
       items: [
         xtype: "panel"
-        title: "Hello Ext"
-        html: "Hello! Welcome to Ext JS."
+        title: "Users"
+        html: "List of users will go here"
       ]
