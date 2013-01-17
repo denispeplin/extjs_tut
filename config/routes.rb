@@ -1,4 +1,7 @@
 ExtjsTut::Application.routes.draw do
+  resources :users
+
+
   get "hello/index"
 
   # The priority is based upon order of creation:
