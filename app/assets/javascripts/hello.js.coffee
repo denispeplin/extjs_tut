@@ -4,10 +4,12 @@
 Ext.application
   requires: ['Ext.container.Viewport']
   name: "HelloExt"
+  appFolder: "/assets/app"
   launch: ->
     Ext.create "Ext.container.Viewport",
       layout: "fit"
       items: [
+        xtype: "panel"
         title: "Hello Ext"
         html: "Hello! Welcome to Ext JS."
       ]
