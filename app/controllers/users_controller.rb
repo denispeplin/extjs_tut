@@ -6,4 +6,16 @@ class UsersController < ApplicationController
       format.json { render json: @users }
     end
   end
+
+  def update
+    @user = User.find(params[:id])
+
+    respond_to do |format|
+      if @user.update_attributes(params[:user])
+        format.json { head :no_content }
+      else
+        format.json { render json: @user.errors, status: :unprocessable_entity }
+      end
+    end
+  end
 end
