@@ -29,3 +29,5 @@ Ext.define "AM.controller.Users",
     values = form.getValues()
     record.set values
     win.close()
+    # synchronize the store after editing the record
+    @getUsersStore().sync()
