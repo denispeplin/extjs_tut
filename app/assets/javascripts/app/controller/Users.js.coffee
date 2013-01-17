@@ -23,4 +23,9 @@ Ext.define "AM.controller.Users",
     view.down("form").loadRecord record
 
   updateUser: (button) ->
-    console.log "clicked the Save button"
+    win = button.up("window")
+    form = win.down("form")
+    record = form.getRecord()
+    values = form.getValues()
+    record.set values
+    win.close()
