@@ -4,8 +4,9 @@ Ext.define "AM.controller.Users",
     'user.List'
   ]
   init: ->
-    @control "viewport > panel":
-      render: @onPanelRendered
+    @control userlist:
+      itemdblclick: @editUser
 
-  onPanelRendered: ->
-    console.log "The panel was rendered"
+
+  editUser: (grid, record) ->
+    console.log "Double clicked on " + record.get("name")
