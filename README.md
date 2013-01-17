@@ -10,5 +10,5 @@ ln -s /somepath/ext-4.1.1a public/extjs
 
 ## Documentation links
 
-[Getting Started](http://docs.sencha.com/ext-js/4-1/#!/guide/getting_started)
-[MVC Architecture](http://docs.sencha.com/ext-js/4-1/#!/guide/application_architecture)
+* [Getting Started](http://docs.sencha.com/ext-js/4-1/#!/guide/getting_started)
+* [MVC Architecture](http://docs.sencha.com/ext-js/4-1/#!/guide/application_architecture)
