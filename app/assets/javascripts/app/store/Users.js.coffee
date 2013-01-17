@@ -1,6 +1,7 @@
 Ext.define "AM.store.Users",
   extend: "Ext.data.Store"
-  fields: ["name", "email"]
+  model: 'AM.model.User'
+
   data: [
     name: "Ed"
     email: "ed@sencha.com"
