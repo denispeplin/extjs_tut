@@ -5,6 +5,9 @@ Ext.application
   requires: ['Ext.container.Viewport']
   name: "AM"
   appFolder: "/assets/app"
+  controllers: [
+    'Users'
+  ]
   launch: ->
     Ext.create "Ext.container.Viewport",
       layout: "fit"
