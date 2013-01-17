@@ -1,9 +1,8 @@
 # Place all the behaviors and hooks related to the matching controller here.
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
-Ext.require 'Ext.container.Viewport'
-
 Ext.application
+  requires: ['Ext.container.Viewport']
   name: "HelloExt"
   launch: ->
     Ext.create "Ext.container.Viewport",
