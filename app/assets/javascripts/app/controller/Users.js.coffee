@@ -11,9 +11,16 @@ Ext.define "AM.controller.Users",
     'user.Edit'
   ]
   init: ->
-    @control userlist:
-      itemdblclick: @editUser
+    @control
+      "userlist":
+        itemdblclick: @editUser
+
+      "useredit button[action=save]":
+        click: @updateUser
 
   editUser: (grid, record) ->
     view = Ext.widget("useredit")
     view.down("form").loadRecord record
+
+  updateUser: (button) ->
+    console.log "clicked the Save button"
