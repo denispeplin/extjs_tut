@@ -2,10 +2,18 @@
 
 Download ExtJS source from http://www.sencha.com/products/extjs/
 
-Link extjs source to public directory, for example:
+Unpack and link extjs source to `public` directory, for example:
 
 ```bash
 ln -s /somepath/ext-4.1.1a public/extjs
+```
+
+Install gems, migrate and seed database:
+
+```bash
+bundle
+rake db:migrate
+rake db:seed
 ```
 
 ## Documentation links
