@@ -20,7 +20,3 @@ rake db:seed
 
 * [Getting Started](http://docs.sencha.com/ext-js/4-1/#!/guide/getting_started)
 * [MVC Architecture](http://docs.sencha.com/ext-js/4-1/#!/guide/application_architecture)
-
-## TODO
-
-* Verify CSRF
