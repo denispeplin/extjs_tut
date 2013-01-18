@@ -8,7 +8,7 @@ Ext.define "AM.controller.Users",
   ]
   views: [
     'user.List',
-    'user.Edit'
+    'user.Form'
   ]
   refs: [{
     ref: 'list',
@@ -23,11 +23,11 @@ Ext.define "AM.controller.Users",
       "userlist button[action=delete]":
         click: @deleteUser
 
-      "useredit button[action=save]":
+      "userform button[action=save]":
         click: @updateUser
 
   editUser: (grid, record) ->
-    view = Ext.widget("useredit")
+    view = Ext.widget("userform")
     view.down("form").loadRecord record
 
   updateUser: (button) ->

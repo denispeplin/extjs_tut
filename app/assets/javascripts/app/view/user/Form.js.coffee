@@ -1,7 +1,7 @@
-Ext.define "AM.view.user.Edit",
+Ext.define "AM.view.user.Form",
   extend: "Ext.window.Window"
-  alias: "widget.useredit"
-  title: "Edit User"
+  alias: "widget.userform"
+  title: "User"
   layout: "fit"
   autoShow: true
   initComponent: ->
