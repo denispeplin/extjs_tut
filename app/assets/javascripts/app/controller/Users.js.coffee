@@ -33,15 +33,19 @@ Ext.define "AM.controller.Users",
   updateUser: (button) ->
     win = button.up("window")
     form = win.down("form")
-    record = form.getRecord()
     values = form.getValues()
-    record.set values
+    record = form.getRecord()
+    store  = @getUsersStore()
+    if record
+      record.set values
+    else
+      store.add values
     win.close()
     # synchronize the store after editing the record
-    @getUsersStore().sync()
+    store.sync()
 
   addUser: (button) ->
-    alert("Add pressed")
+    view = Ext.widget("userform")
 
   deleteUser: (button) ->
     sm = @getList().getSelectionModel()
