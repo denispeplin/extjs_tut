@@ -9,6 +9,13 @@ Ext.application
     'Users'
   ]
   launch: ->
+    try
+      csrfToken = Ext.select("meta[name='csrf-token']").elements[0].getAttribute("content")
+      Ext.Ajax.on "beforerequest", (o, r) ->
+        r.headers = Ext.apply(
+          Accept: "application/json"
+          "X-CSRF-Token": csrfToken
+        , r.headers or {})
     Ext.create "Ext.container.Viewport",
       layout: "fit"
       items: [
