@@ -10,6 +10,10 @@ Ext.define "AM.controller.Users",
     'user.List',
     'user.Edit'
   ]
+  refs: [{
+    ref: 'list',
+    selector: 'userlist'
+  }]
   init: ->
     @control
       "userlist":
@@ -40,4 +44,8 @@ Ext.define "AM.controller.Users",
     alert("Add pressed")
 
   deleteUser: (button) ->
-    alert("Delete pressed")
+    sm = @getList().getSelectionModel()
+    if sm
+      store = @getUsersStore()
+      store.remove sm.getSelection()
+      store.sync()
