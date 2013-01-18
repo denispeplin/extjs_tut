@@ -4,6 +4,22 @@ Ext.define "AM.view.user.List",
   title: "All Users"
   store: 'Users'
 
+  dockedItems: [
+    xtype: "toolbar"
+    dock: "bottom"
+
+    items: [
+      iconCls: "add"
+      text: "Add"
+      handler: ->
+        alert "Add pressed"
+    ,
+      iconCls: "delete"
+      text: "Delete"
+      handler: ->
+        alert "Delete pressed"
+    ]
+  ]
   initComponent: ->
     @columns = [
       header: "Name"

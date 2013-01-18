@@ -11,3 +11,10 @@
  *= require_self
  *= require_tree .
  */
+.add {
+        background: url('add.png');
+}
+
+.delete {
+        background: url('delete.png');
+}
