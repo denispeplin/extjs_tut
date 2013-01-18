@@ -11,13 +11,11 @@ Ext.define "AM.view.user.List",
     items: [
       iconCls: "add"
       text: "Add"
-      handler: ->
-        alert "Add pressed"
+      action: "add"
     ,
       iconCls: "delete"
       text: "Delete"
-      handler: ->
-        alert "Delete pressed"
+      action: "delete"
     ]
   ]
   initComponent: ->

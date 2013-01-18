@@ -14,6 +14,10 @@ Ext.define "AM.controller.Users",
     @control
       "userlist":
         itemdblclick: @editUser
+      "userlist button[action=add]":
+        click: @addUser
+      "userlist button[action=delete]":
+        click: @deleteUser
 
       "useredit button[action=save]":
         click: @updateUser
@@ -31,3 +35,9 @@ Ext.define "AM.controller.Users",
     win.close()
     # synchronize the store after editing the record
     @getUsersStore().sync()
+
+  addUser: (button) ->
+    alert("Add pressed")
+
+  deleteUser: (button) ->
+    alert("Delete pressed")
