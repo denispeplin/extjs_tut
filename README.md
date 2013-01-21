@@ -28,6 +28,4 @@ rake db:seed
 
 ## TODO
 
-* Disable 'Delete' button when no users selected.
-* Ask for confirmation before removing user.
-* Implement validation for Create and Update actions.
+* Switch to [Netzke](http://netzke.org/)
