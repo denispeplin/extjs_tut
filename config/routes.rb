@@ -1,6 +1,7 @@
 ExtjsTut::Application.routes.draw do
-  resources :users
+  netzke
 
+  resources :users
 
   get "hello/index"
 
