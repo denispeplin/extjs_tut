@@ -1,3 +1,18 @@
+GIT
+  remote: git://github.com/netzke/netzke-basepack.git
+  revision: 0d14192fb139c5ed0c4bef15ef6e58c636a83205
+  specs:
+    netzke-basepack (0.8.2)
+      netzke-core (~> 0.8.2)
+
+GIT
+  remote: git://github.com/netzke/netzke-core.git
+  revision: 7c43b70ea9473b5d0f92b63a3acc3d9cfac89e26
+  specs:
+    netzke-core (0.8.2)
+      execjs
+      uglifier
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -53,10 +68,6 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.19)
     multi_json (1.5.0)
-    netzke-basepack (0.8.0)
-      netzke-core (~> 0.8.0)
-    netzke-core (0.8.0)
-      activesupport (>= 3.1.0)
     polyglot (0.3.3)
     rack (1.4.4)
     rack-cache (1.2)
@@ -110,8 +121,8 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
   jquery-rails
-  netzke-basepack (~> 0.8.0)
-  netzke-core (~> 0.8.0)
+  netzke-basepack!
+  netzke-core!
   rails (= 3.2.11)
   sass-rails (~> 3.2.3)
   sqlite3

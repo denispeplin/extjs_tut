@@ -7,8 +7,8 @@ gem 'rails', '3.2.11'
 
 gem 'sqlite3'
 
-gem 'netzke-core', '~>0.8.0'
-gem 'netzke-basepack', '~>0.8.0'
+gem 'netzke-core', git: 'git://github.com/netzke/netzke-core.git'
+gem 'netzke-basepack', git: 'git://github.com/netzke/netzke-basepack.git'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
