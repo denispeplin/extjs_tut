@@ -4,7 +4,7 @@ Ext.define "AM.store.Users",
   autoLoad: true
   proxy:
     type: "rest"
-    url: "users"
+    url: "/users"
 
     reader:
       type: "json"
