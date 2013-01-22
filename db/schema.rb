@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130121105934) do
+ActiveRecord::Schema.define(:version => 20130122115856) do
 
   create_table "pages", :force => true do |t|
     t.string   "name"
@@ -26,8 +26,11 @@ ActiveRecord::Schema.define(:version => 20130121105934) do
   create_table "users", :force => true do |t|
     t.string   "name"
     t.string   "email"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",                    :null => false
+    t.datetime "updated_at",                    :null => false
+    t.boolean  "admin",      :default => false
   end
+
+  add_index "users", ["admin"], :name => "index_users_on_admin"
 
 end
