@@ -16,6 +16,17 @@ rake db:migrate
 rake db:seed
 ```
 
+## Run application
+
+```bash
+rails s
+```
+
+Following links are available:
+
+* Netzke version is on the root page, just visit [http://localhost:3000](http://localhost:3000).
+* ExtJS version is on the `/hello/index` page, visit [http://localhost:3000/hello/index](http://localhost:3000/hello/index)
+
 ## Documentation links
 
 * [Getting Started](http://docs.sencha.com/ext-js/4-1/#!/guide/getting_started)
